@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/tvCalciInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:ellipsize="start"
+        android:padding="16dp"
+        android:text="7*7"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCalciOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="16dp"
+        android:text="49"
+        android:textColor="@color/light"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+</merge>
