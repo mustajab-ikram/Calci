@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:gravity="center_vertical"
     android:orientation="vertical"
     tools:parentTag="android.widget.LinearLayout">
 
@@ -12,12 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:ellipsize="start"
+        android:maxLines="3"
         android:padding="16dp"
         android:text="7*7"
         android:textColor="@color/black"
         android:textSize="32sp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,TextViewEdits" />
 
     <TextView
         android:id="@+id/tvCalciOutput"

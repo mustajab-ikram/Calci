@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:parentTag="android.widget.RelativeLayout">
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/light" />
+        android:background="@color/tile" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/ivInput"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_trash"
+        app:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <View
+        android:id="@+id/vInputClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+</merge>

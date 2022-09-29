@@ -14,7 +14,7 @@ class CalciOutputView(context: Context, attributeSet: AttributeSet?) : LinearLay
         // Set Gravity
         gravity = Gravity.CENTER_VERTICAL
 
-        // Layout Inflator
+        // Layout Inflater
         LayoutInflater.from(context).inflate(R.layout.view_calci_output, this, true)
     }
 }
